@@ -1,0 +1,17 @@
+{
+  "name": "freight-trust-editorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "remark": "./node_modules/.bin/remarker",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "backslide": "^2.6.2",
+    "remarker": "^1.12.1"
+  }
+}
