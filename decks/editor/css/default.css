@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
-@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid + Serif);
+@import url(https://fonts.googleapis.com/css?family=Yanone + Kaffeesatz);
 @import url(https://fonts.googleapis.com/css?family=Anton);
 
 body {
-  font-family: 'Droid Serif';
+  font-family: "Droid Serif";
   margin: 0;
 }
 .header {
@@ -22,8 +22,10 @@ body {
   line-height: 1em;
 }
 
-h1, h2, h3 {
-  font-family: 'Yanone Kaffeesatz';
+h1,
+h2,
+h3 {
+  font-family: "Yanone Kaffeesatz";
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -52,6 +54,6 @@ h1, h2, h3 {
   width: 152px;
   height: 25px;
   cursor: pointer;
-  background-image: url('https://www.dropbox.com/static/images/widgets/chooser-button-sprites.png');
+  background-image: url("https://www.dropbox.com/static/images/widgets/chooser-button-sprites.png");
   margin-top: 0.7em;
 }

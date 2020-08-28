@@ -1,11 +1,10 @@
 (function (context) {
-
   var slideshow = createSlideshow(),
-      editor = createEditor(slideshow);
+    editor = createEditor(slideshow);
 
   slideshow.loadFromString(editor.getValue());
 
-  $('#choose').click(function () {
+  $("#choose").click(function () {
     Dropbox.choose({
       success: function (files) {
         var url = files[0].link;
@@ -17,10 +16,9 @@
             // Download failed
           });
       },
-      cancel: function () {
-      },
-      linkType: 'direct',
-      multiselect: false
+      cancel: function () {},
+      linkType: "direct",
+      multiselect: false,
     });
   });
 
@@ -29,7 +27,7 @@
 
     editor.setTheme("ace/theme/textmate");
     editor.getSession().setMode("ace/mode/markdown");
-    editor.on('change', function(e) {
+    editor.on("change", function (e) {
       slideshow.loadFromString(editor.getValue());
     });
 
@@ -38,10 +36,9 @@
 
   function createSlideshow() {
     var slideshow = remark.create({
-      container: document.getElementById('slideshow')
+      container: document.getElementById("slideshow"),
     });
 
     return slideshow;
   }
-
-}(this));
+})(this);
